@@ -1,3 +1,4 @@
+
 input{
   margin-left: 8px;
 }
@@ -7,13 +8,24 @@ input{
 }
 .submit-btn{
   display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .result{
   display: none;
+  margin: 10px 10px;
 }
 .neko-message{
   display: inline-block;
+  margin: 10px 10px;
 }
 .neko{
   display: inline-block;
 }
+.descriptions{
+  font-size: larger;
+}
+.neko2{
+  margin: auto;
+}
+
