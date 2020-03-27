@@ -43,18 +43,38 @@ $(document).ready(function(){
   
   $("#questions").submit(function(event){
     event.preventDefault();  
-    // var rubyCount = 0;
-    // var jsCount = 0;
-    // var pythonCount = 0;
+    
     var rubyResult = 'Ruby!';
     var jsResult = 'JavaScript!';
     var pythonResult = 'Python!';
+    var rubyAndjs = 'Ruby and JavaScript!';
+    var jsAndPython = 'JavaSctipt and Python!';
+    var rubAndPython = 'Ruby and Python!';
+    var everything = 'Ruby, JavaScript and Python!';
+    var allNo = 'Dude, cmon man.'
 
-    if (rubyCount > jsCount && rubyCount > pythonCount){
+    if (rubyCount === 0 && jsCount === 0 && pythonCount === 0){
+      console.log(allNo);
+    } else if (rubyCount > jsCount && rubyCount > pythonCount){
       console.log(rubyResult);
     } else if (rubyCount > jsCount && rubyCount >= pythonCount){
-      console.log(rubyResult);
+      console.log(rubAndPython);
+    } else if (rubyCount >= jsCount && rubyCount > pythonCount){
+      console.log(rubyAndjs);
+    } else if (jsCount > rubyCount && jsCount > pythonCount){
+      console.log(jsResult);
+    } else if (jsCount > rubyCount && jsCount >= pythonCount){
+      console.log(jsAndPython);
+    } else if (jsCount >= rubyCount && jsCount > pythonCount){
+      console.log(rubyAndjs);
+    } else if (pythonCount > rubyCount && pythonCount > jsCount){
       console.log(pythonResult);
+    } else if (pythonCount > rubyCount && pythonCount >= jsCount){
+      console.log(jsAndPython);
+    } else if (pythonCount >= rubyCount && pythonCount > jsCount){
+      console.log(rubAndPython);
+    } else {
+      console.log(everything);
     }
   });
 });
