@@ -1,7 +1,13 @@
 $(document).ready(function(){
   // console.log($(".q1 input"))
+  var rubyCount = 0;
+  var jsCount = 0;
+  var pythonCount = 0;
+
   $(".q1-button").click(function(){
-    // console.log($(this).val())
+    if($(this).val() === yes){
+      jsCount ++;
+    }
     $('.q2').show();
   });
   $(".q2-button").click(function(){
@@ -40,6 +46,7 @@ $(document).ready(function(){
     // console.log($(this).val())
     $('.button').show();
   });
-  var numOfYes = ''
+
+  var numOfYes = $(this).val();
   
 });
