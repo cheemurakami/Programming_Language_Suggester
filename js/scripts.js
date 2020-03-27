@@ -89,7 +89,6 @@ $(document).ready(function(){
   
   $("#form-group").submit(function(event){
     event.preventDefault();  
-    
     var rubyResult = 'Ruby!';
     var jsResult = 'JavaScript!';
     var pythonResult = 'Python!';
@@ -97,11 +96,11 @@ $(document).ready(function(){
     var jsAndPython = 'JavaSctipt and Python!';
     var rubAndPython = 'Ruby and Python!';
     var everything = 'Ruby, JavaScript and Python!';
-    var allNo = 'Dude, please stop testing me.'
+    var allNo = "I don't know why you are here...";
 
     if (rubyCount === 0 && jsCount === 0 && pythonCount === 0){
       $('.result').show();
-      $('div.message').text(allNo);
+      $('.neko-message').text(allNo);
     } else if (rubyCount > jsCount && rubyCount > pythonCount){
       $('.result').show();
       $('#message').text(rubyResult);
