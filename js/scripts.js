@@ -3,6 +3,9 @@ $(document).ready(function(){
   var rubyCount = 0;
   var jsCount = 0;
   var pythonCount = 0;
+  $("#start").click(function(){
+    $(".form-container").show();
+  });
 
   $(".q1-button").click(function(){
     var label = $(this).parent()
