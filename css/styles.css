@@ -11,3 +11,9 @@ input{
 .result{
   display: none;
 }
+.neko-message{
+  display: inline-block;
+}
+.neko{
+  display: inline-block;
+}
