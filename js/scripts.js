@@ -38,11 +38,23 @@ $(document).ready(function(){
     if($(this).val() === "yes"){
       pythonCount ++;
     }
-    $('.button').show();
+    $('.submit-btn').show();
   });
   
-  $("submit-btn").submit(function(event){
+  $("#questions").submit(function(event){
     event.preventDefault();  
-   alert('hello');
+    // var rubyCount = 0;
+    // var jsCount = 0;
+    // var pythonCount = 0;
+    var rubyResult = 'Ruby!';
+    var jsResult = 'JavaScript!';
+    var pythonResult = 'Python!';
+
+    if (rubyCount > jsCount && rubyCount > pythonCount){
+      console.log(rubyResult);
+    } else if (rubyCount > jsCount && rubyCount >= pythonCount){
+      console.log(rubyResult);
+      console.log(pythonResult);
+    }
   });
 });
