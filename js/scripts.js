@@ -5,14 +5,22 @@ $(document).ready(function(){
   var pythonCount = 0;
 
   $(".q1-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
       jsCount ++;
-      $(".q1-button").addClass('active');
-      console.log(jsCount);
+      // console.log(jsCount);
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $(this).attr("disabled",true); 
     $('.q2').show();
-    
   });
+
+
+
   $(".q2-button").click(function(){
     if($(this).val() === "yes"){
       jsCount ++;
@@ -45,7 +53,7 @@ $(document).ready(function(){
     $('.submit-btn').show();
   });
   
-  $("#questions").submit(function(event){
+  $("#form-group").submit(function(event){
     event.preventDefault();  
     
     var rubyResult = 'Ruby!';
