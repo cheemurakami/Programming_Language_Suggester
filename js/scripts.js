@@ -37,7 +37,7 @@ $(document).ready(function(){
   $(".q3-button").click(function(){
     var label = $(this).parent()
     if($(this).val() === "yes"){
-      jsCount ++;
+      rubyCount ++;
       label.addClass('btn-success');
       label.removeClass('btn-secondary');
     } else {
@@ -50,7 +50,7 @@ $(document).ready(function(){
   $(".q4-button").click(function(){
     var label = $(this).parent()
     if($(this).val() === "yes"){
-      jsCount ++;
+      pythonCount ++;
       label.addClass('btn-success');
       label.removeClass('btn-secondary');
     } else {
@@ -63,7 +63,7 @@ $(document).ready(function(){
   $(".q5-button").click(function(){
     var label = $(this).parent()
     if($(this).val() === "yes"){
-      jsCount ++;
+      rubyCount ++;
       label.addClass('btn-success');
       label.removeClass('btn-secondary');
     } else {
@@ -76,7 +76,7 @@ $(document).ready(function(){
   $(".q6-button").click(function(){
     var label = $(this).parent()
     if($(this).val() === "yes"){
-      jsCount ++;
+      pythonCount ++;
       label.addClass('btn-success');
       label.removeClass('btn-secondary');
     } else {
@@ -97,7 +97,6 @@ $(document).ready(function(){
     var rubAndPython = 'Ruby and Python!';
     var everything = 'Ruby, JavaScript and Python!';
     var allNo = "I don't know why you are here...";
-
     if (rubyCount === 0 && jsCount === 0 && pythonCount === 0){
       $('.result').show();
       $('.neko-message').text(allNo);
