@@ -8,48 +8,79 @@ $(document).ready(function(){
     var label = $(this).parent()
     if($(this).val() === "yes"){
       jsCount ++;
-      // console.log(jsCount);
       label.addClass('btn-success');
       label.removeClass('btn-secondary');
     } else {
       label.addClass('btn-danger');
       label.removeClass('btn-secondary');
     }
-    $(this).attr("disabled",true); 
+    $('.q1-button').attr("disabled",true); 
     $('.q2').show();
   });
 
-
-
   $(".q2-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
       jsCount ++;
-      console.log(jsCount);
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $('.q2-button').attr("disabled",true); 
     $('.q3').show();
   });
   $(".q3-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
-      rubyCount ++;
+      jsCount ++;
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $('.q3-button').attr("disabled",true); 
     $('.q4').show();
   });
   $(".q4-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
-      pythonCount ++;
+      jsCount ++;
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $('.q4-button').attr("disabled",true); 
     $('.q5').show();
   });
   $(".q5-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
-      rubyCount ++;
+      jsCount ++;
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $('.q5-button').attr("disabled",true); 
     $('.q6').show();
   });
   $(".q6-button").click(function(){
+    var label = $(this).parent()
     if($(this).val() === "yes"){
-      pythonCount ++;
+      jsCount ++;
+      label.addClass('btn-success');
+      label.removeClass('btn-secondary');
+    } else {
+      label.addClass('btn-danger');
+      label.removeClass('btn-secondary');
     }
+    $('.q6-button').attr("disabled",true); 
     $('.submit-btn').show();
   });
   
