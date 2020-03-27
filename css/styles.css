@@ -8,3 +8,9 @@ input{
 .submit-btn{
   display: none;
 }
+.result{
+  display: none;
+}
+.active{
+  background-color: pink;
+}

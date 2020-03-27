@@ -7,12 +7,16 @@ $(document).ready(function(){
   $(".q1-button").click(function(){
     if($(this).val() === "yes"){
       jsCount ++;
+      $(".q1-button").addClass('active');
+      console.log(jsCount);
     }
     $('.q2').show();
+    
   });
   $(".q2-button").click(function(){
     if($(this).val() === "yes"){
       jsCount ++;
+      console.log(jsCount);
     }
     $('.q3').show();
   });
@@ -51,30 +55,41 @@ $(document).ready(function(){
     var jsAndPython = 'JavaSctipt and Python!';
     var rubAndPython = 'Ruby and Python!';
     var everything = 'Ruby, JavaScript and Python!';
-    var allNo = 'Dude, cmon man.'
+    var allNo = 'Dude, please stop testing me.'
 
     if (rubyCount === 0 && jsCount === 0 && pythonCount === 0){
-      console.log(allNo);
+      $('.result').show();
+      $('div.message').text(allNo);
     } else if (rubyCount > jsCount && rubyCount > pythonCount){
-      console.log(rubyResult);
+      $('.result').show();
+      $('#message').text(rubyResult);
     } else if (rubyCount > jsCount && rubyCount >= pythonCount){
-      console.log(rubAndPython);
+      $('.result').show();
+      $('#message').text(rubAndPython);
     } else if (rubyCount >= jsCount && rubyCount > pythonCount){
-      console.log(rubyAndjs);
+      $('.result').show();
+      $('#message').text(rubyAndjs);
     } else if (jsCount > rubyCount && jsCount > pythonCount){
-      console.log(jsResult);
+      $('.result').show();
+      $('#message').text(jsResult);
     } else if (jsCount > rubyCount && jsCount >= pythonCount){
-      console.log(jsAndPython);
+      $('.result').show();
+      $('#message').text(jsAndPython);
     } else if (jsCount >= rubyCount && jsCount > pythonCount){
-      console.log(rubyAndjs);
+      $('.result').show();
+      $('#message').text(rubyAndjs);
     } else if (pythonCount > rubyCount && pythonCount > jsCount){
-      console.log(pythonResult);
+      $('.result').show();
+      $('#message').text(pythonResult);
     } else if (pythonCount > rubyCount && pythonCount >= jsCount){
-      console.log(jsAndPython);
+      $('.result').show();
+      $('#message').text(jsAndPython);
     } else if (pythonCount >= rubyCount && pythonCount > jsCount){
-      console.log(rubAndPython);
+      $('.result').show();
+      $('#message').text(rubAndPython);
     } else {
-      console.log(everything);
+      $('.result').show();
+      $('#message').text(everything);
     }
   });
 });
